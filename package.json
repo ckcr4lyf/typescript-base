@@ -21,6 +21,19 @@
   },
   "homepage": "https://github.com/ckcr4lyf/typescript-base#readme",
   "devDependencies": {
+    "ava": "^5.1.0",
     "typescript": "^4.9.4"
+  },
+  "ava": {
+    "files": [
+      "__tests__/**/*"
+    ],
+    "timeout": "1m",
+    "typescript": {
+      "rewritePaths": {
+        "__tests__/": "build/__tests__/"
+      },
+      "compile": false
+    }
   }
 }
